@@ -1,0 +1,22 @@
+import PageHero from "../components/layout/PageHero";
+import AgencyVsSaaS from "../sections/AgencyVsSaaS";
+import WhyForwardly from "../sections/WhyForwardly";
+import GlobalReach from "../sections/GlobalReach";
+import CTA from "../sections/CTA";
+
+export default function About() {
+  return (
+    <>
+      <PageHero
+        eyebrow="Who we are"
+        crumb="About"
+        title={<>A studio that ships like a <span className="text-gradient">product team.</span></>}
+        intro="Forwardly fuses the craft of a premium creative agency with the leverage of a SaaS platform. Remote-first, detail-obsessed, and built for momentum."
+      />
+      <AgencyVsSaaS />
+      <WhyForwardly />
+      <GlobalReach />
+      <CTA />
+    </>
+  );
+}
