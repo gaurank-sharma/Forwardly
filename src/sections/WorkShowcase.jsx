@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import SectionHeading from "../components/ui/SectionHeading";
 import Turntable from "../components/ui/Turntable";
+import Sequence360 from "../components/ui/Sequence360";
 import Lightbox from "../components/ui/Lightbox";
 import MagneticButton from "../components/ui/MagneticButton";
 import { gsap } from "../lib/gsap";
@@ -139,6 +140,7 @@ export default function WorkShowcase({ dark = true, heading = true, viewAll = fa
             {/* media */}
             <div ref={stageRef} className="absolute inset-0 p-6 sm:p-10">
               {item.type === "video" && <Turntable key={item.id} src={item.src} />}
+              {item.type === "sequence" && <Sequence360 key={item.id} frames={item.frames} />}
               {item.type === "image" && item.category === "AR / VR" && (
                 <ArvrStage key={item.id} item={item} />
               )}
@@ -179,7 +181,7 @@ export default function WorkShowcase({ dark = true, heading = true, viewAll = fa
               {list.map((w, i) => {
                 const on = w.id === item.id;
                 const Icon =
-                  w.type === "video"
+                  w.type === "video" || w.type === "sequence"
                     ? Rotate3d
                     : w.category === "AR / VR"
                       ? Glasses

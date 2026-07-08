@@ -42,7 +42,7 @@ function HeroCards() {
         <div className="absolute inset-0 overflow-hidden rounded-[1.75rem] border border-white/10">
           <img
             src="/image%20copy.png"
-            alt="Forwardly creative studio team"
+            alt="Forwardly creative agency team"
             className="h-full w-full object-cover"
             style={{ objectPosition: "center" }}
           />
@@ -51,7 +51,7 @@ function HeroCards() {
           ref={pill}
           className="absolute -right-5 top-7 z-10 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2.5 text-sm font-bold text-[#0a0a0b] shadow-[0_18px_40px_-12px_rgba(0,0,0,0.6)] will-change-transform"
         >
-          <span className="h-3.5 w-3.5 rounded-[4px] bg-[#0a0a0b]" /> Creative Studio
+          <span className="h-3.5 w-3.5 rounded-[4px] bg-[#0a0a0b]" /> Creative Agency
         </span>
       </div>
 
@@ -95,7 +95,7 @@ function HeroCards() {
       {/* 5 — white stat + pills + globe */}
       <div className="relative mt-0 h-[26rem] flex-[1.15] overflow-hidden rounded-[1.75rem] bg-white p-7 text-[#0a0a0b]">
         <div className="font-display text-5xl font-extrabold leading-none">Global</div>
-        <div className="mt-3 text-[0.95rem] text-black/55">Remote-first, any timezone</div>
+        <div className="mt-3 text-[0.95rem] text-black/55">Gurgaon, India · worldwide</div>
         <div className="mt-4 flex flex-wrap gap-2">
           <span className="rounded-full bg-[#0a0a0b] px-3.5 py-1.5 text-xs font-bold text-[#c2f54b]">Async</span>
           <span className="rounded-full bg-[#0a0a0b] px-3.5 py-1.5 text-xs font-bold text-[#c2f54b]">24/7</span>
@@ -175,7 +175,7 @@ export default function Hero() {
       <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-1 flex-col items-center justify-center px-6 pt-32 text-center">
         <span className="hero-eyebrow mb-7 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/70 backdrop-blur">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#c2f54b]" />
-          Creative &amp; 3D Studio · Agency × SaaS
+          Creative &amp; 3D Agency · Web × CGI
         </span>
 
         <h1 className="font-display text-[clamp(3rem,8.5vw,7rem)] font-extrabold leading-[0.98] tracking-[-0.03em] [perspective:800px]">

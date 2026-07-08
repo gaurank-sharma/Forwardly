@@ -55,8 +55,8 @@ export default function Footer() {
               <Logo dark />
             </Link>
             <p className="mt-5 text-[1.05rem] leading-relaxed text-white/60">
-              A digital studio — part premium creative agency, part SaaS
-              platform. Your Vision. Our Execution.
+              A creative agency for web, 3D and brand — engineered to perform.
+              Your Vision. Our Execution.
             </p>
             <div className="mt-6 flex gap-3">
               {socials.map(({ Icon, label }) => (

@@ -17,7 +17,7 @@ const services = [
 
 const info = [
   { icon: Mail, label: "Email", value: "hello@forwardly.in" },
-  { icon: MapPin, label: "Studio", value: "Remote-first · India & worldwide" },
+  { icon: MapPin, label: "Office", value: "Sector 58, Gurgaon" },
   { icon: Clock, label: "Response", value: "Within 2 hours" },
 ];
 
@@ -99,7 +99,7 @@ export default function Contact() {
                         required
                         value={form.name}
                         onChange={set("name")}
-                        placeholder="Jane Doe"
+                        placeholder=""
                         className="fwd-input"
                       />
                     </Field>
@@ -109,7 +109,7 @@ export default function Contact() {
                         type="email"
                         value={form.email}
                         onChange={set("email")}
-                        placeholder="jane@company.com"
+                        placeholder="you@company.com"
                         className="fwd-input"
                       />
                     </Field>

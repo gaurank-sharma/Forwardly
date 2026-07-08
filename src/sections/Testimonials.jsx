@@ -20,7 +20,7 @@ export default function Testimonials() {
           align="center"
           eyebrow="In their words"
           title={<>What partners <span className="text-gradient">say.</span></>}
-          intro="The teams we work with want a studio that ships like a product org — fast, polished, and accountable to results."
+          intro="The teams we work with want a partner that ships like a product org — fast, polished, and accountable to results."
         />
 
         {/* sticky-stacked, tilted cards */}
@@ -45,6 +45,16 @@ export default function Testimonials() {
                     <div>
                       <div className="font-bold">{t.name}</div>
                       <div className={`text-sm ${th.role}`}>{t.role}</div>
+                      {t.site && (
+                        <a
+                          href={t.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className={`text-sm font-medium underline-offset-2 hover:underline ${th.quote}`}
+                        >
+                          {t.site} ↗
+                        </a>
+                      )}
                     </div>
                   </figcaption>
                 </figure>

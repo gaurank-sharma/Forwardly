@@ -3,6 +3,7 @@ import ServicesSection from "../sections/Services";
 import CTA from "../sections/CTA";
 import SectionHeading from "../components/ui/SectionHeading";
 import Reveal from "../components/ui/Reveal";
+import Seo from "../components/Seo";
 
 const steps = [
   { n: "01", t: "Discover", d: "We dig into your goals, users and constraints — then scope a plan with clear milestones." },
@@ -14,10 +15,15 @@ const steps = [
 export default function Services() {
   return (
     <>
+      <Seo
+        title="Services — 3D Visualization, CGI, AR/VR & Web | Forwardly"
+        description="Forwardly's services: 3D product visualization, photoreal CGI renders, 360° animation, AR/VR experiences, web development, branding and motion design — for brands worldwide."
+        path="/services"
+      />
       <PageHero
         eyebrow="What we do"
         crumb="Services"
-        title={<>Everything digital, <span className="text-gradient">one studio.</span></>}
+        title={<>Everything digital, <span className="text-gradient">one agency.</span></>}
         intro="Led by world-class web development and extended across content, 3D, brand, motion and growth — all under one roof, all built to a product standard."
       />
 

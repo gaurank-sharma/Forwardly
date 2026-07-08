@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { gsap, ScrollTrigger } from "../lib/gsap";
 
 const statement =
-  "At Forwardly, we believe execution beats promises. We're a creative & 3D studio that turns ambitious ideas into premium digital experiences — from photoreal product visualization to high-performance websites that actually perform.";
+  "At Forwardly, we believe execution beats promises. We're a creative & 3D agency that turns ambitious ideas into premium digital experiences — from photoreal product visualization to high-performance websites that actually perform.";
 
 export default function AboutStatement() {
   const root = useRef(null);

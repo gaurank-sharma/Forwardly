@@ -30,13 +30,13 @@ const cards = [
 ];
 
 const pills = [
-  { t: "Creative Studio", cls: "bg-white text-[#0a0a0b]", rot: -9, mt: "mt-4" },
+  { t: "Creative Agency", cls: "bg-white text-[#0a0a0b]", rot: -9, mt: "mt-4" },
   { t: "3D-first", cls: "bg-[#c2f54b] text-[#0a0a0b]", rot: 8, mt: "mt-14" },
   { t: "Detail-obsessed", cls: "bg-[#f97316] text-white", rot: -6, mt: "mt-0" },
   { t: "Photoreal CGI", cls: "bg-white text-[#0a0a0b]", rot: 11, mt: "mt-12" },
   { t: "Results-driven", cls: "bg-[#1a1a1c] text-white border border-white/10", rot: -8, mt: "mt-2" },
   { t: "Premium Quality", cls: "bg-[#c2f54b] text-[#0a0a0b]", rot: 7, mt: "mt-16" },
-  { t: "Studio-grade", cls: "bg-[#6c5cef] text-white", rot: -11, mt: "mt-1" },
+  { t: "Cinema-grade", cls: "bg-[#6c5cef] text-white", rot: -11, mt: "mt-1" },
   { t: "Pixel-perfect", cls: "bg-white text-[#0a0a0b]", rot: 6, mt: "mt-10" },
   { t: "Fast Turnaround", cls: "bg-[#c2f54b] text-[#0a0a0b]", rot: -7, mt: "mt-3" },
   { t: "Conversion-focused", cls: "bg-[#1a1a1c] text-white border border-white/10", rot: 10, mt: "mt-14" },

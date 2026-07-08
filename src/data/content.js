@@ -58,31 +58,31 @@ export const caseStudies = [
   },
 ];
 
-/* Testimonials. */
+/* Testimonials — real partners we've delivered for. */
 export const testimonials = [
   {
     quote:
-      "Forwardly didn't just build our site — they engineered a growth engine. The team operates like a $1B product org.",
-    name: "Elena Marković",
-    role: "CMO, Nova Commerce",
+      "Forwardly understood the XPAND Bharat vision from day one and executed it exactly the way we imagined — clean, fast, and delivered on time. They feel less like a vendor and more like part of our team.",
+    name: "Seema Bansal",
+    role: "CEO, XPAND Bharat — a venture by XPANDVERSE PVT. LTD.",
+    site: "xpandbharat.com",
+    url: "https://xpandbharat.com",
   },
   {
     quote:
-      "The 3D experience they shipped became our best-performing marketing asset overnight. Genuinely world-class.",
-    name: "David Chen",
-    role: "Founder, Orbit",
+      "We work with a lot of teams, and Forwardly stands out for how seriously they take execution. Detail-obsessed, reliable, and genuinely easy to build alongside. The work speaks for itself.",
+    name: "Arjun",
+    role: "CEO, BeeBark",
+    site: "thebeebark.com",
+    url: "https://thebeebark.com",
   },
   {
     quote:
-      "From brand to dashboard, everything felt cohesive and premium. Investors noticed within the first meeting.",
-    name: "Priya Nair",
-    role: "CEO, Atlas Fintech",
-  },
-  {
-    quote:
-      "Fast, technical, and obsessed with detail. They set a new bar for what a creative partner can be.",
-    name: "Marcus Lee",
-    role: "Head of Growth, Lumen",
+      "Forwardly finally gave Infinity Yoga a website that does justice to what we do. Smooth process, quick turnaround, and they cared about the outcome as much as we did.",
+    name: "Gaurav Sharma",
+    role: "Founder, Infinity Yoga",
+    site: "infinityyoga.in",
+    url: "https://www.infinityyoga.in",
   },
 ];
 
@@ -114,14 +114,22 @@ export const pillars = [
   },
 ];
 
-/* Clients marquee. */
+/* Clients marquee — real brands & businesses we've delivered work for. */
 export const clients = [
-  "NOVA",
-  "ATLAS",
-  "LUMEN",
-  "ORBIT",
-  "VERTEX",
-  "PULSE",
-  "QUANTM",
-  "HORIZON",
+  "XPAND BHARAT",
+  "INFINITY YOGA",
+  "TRIZZONE",
+  "BEEBARK",
+  "POTTERZWHEEL",
+  "WEBMOBHUT",
+  "CANDID",
+  "KUNDKUND STATIONERS",
+  // 3D / CGI product-visualization clients
+  "MICHAEL KORS",
+  "JBL",
+  "SALOMON",
+  "BULOVA",
+  "AIRBUS",
+  "THRUSTMASTER",
+  "xDRIVE",
 ];

@@ -49,12 +49,12 @@ function Orb() {
 const facts = [
   { icon: Globe2, value: "Worldwide", label: "Clients welcome anywhere" },
   { icon: Clock, value: "24/7", label: "Async-friendly delivery" },
-  { icon: Languages, value: "Remote", label: "First by design" },
+  { icon: Languages, value: "Gurgaon", label: "Our home base" },
   { icon: Headphones, value: "<2h", label: "Avg. response time" },
 ];
 
 const regions = [
-  "Remote-first", "Async-friendly", "Any timezone", "Cloud-native",
+  "Gurgaon-based", "Async-friendly", "Any timezone", "Cloud-native",
   "Global ambitions", "Borderless", "Always reachable", "Built to scale",
 ];
 
@@ -74,7 +74,7 @@ export default function GlobalReach() {
               dark
               eyebrow="Borderless by design"
               title={<>Work with us from <span className="text-gradient">anywhere.</span></>}
-              intro="Forwardly is remote-first and async-friendly. Wherever you're based, collaborating with us feels local — clear comms, fast turnarounds, and momentum across timezones."
+              intro="Forwardly is based in Gurgaon and works with clients worldwide. Wherever you're based, collaborating with us feels local — clear comms, fast turnarounds, and momentum across timezones."
             />
 
             <Reveal className="mt-10 grid grid-cols-2 gap-4" stagger={0.1}>

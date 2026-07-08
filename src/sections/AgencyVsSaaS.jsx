@@ -87,7 +87,7 @@ export default function AgencyVsSaaS() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           align="center"
-          eyebrow="Two engines, one studio"
+          eyebrow="Two engines, one agency"
           title={<>Agency craft. <span className="text-gradient">Platform scale.</span></>}
           intro="Most studios make you choose. Forwardly fuses the bespoke care of a premium agency with the leverage of a SaaS platform — so you get craft and scale at once."
         />

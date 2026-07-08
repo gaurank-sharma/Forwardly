@@ -35,7 +35,7 @@ export const services = [
     id: "renders",
     icon: Camera,
     title: "CGI Product Renders",
-    desc: "Studio-grade still renders that replace traditional product photography — every angle, finish and colourway, pixel-perfect.",
+    desc: "Photoreal still renders that replace traditional product photography — every angle, finish and colourway, pixel-perfect.",
     points: ["Packshots", "E-commerce Renders", "Material Studies"],
   },
   {

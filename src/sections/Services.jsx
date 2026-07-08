@@ -53,7 +53,7 @@ export default function Services() {
           </h2>
           <div data-reveal className="flex flex-col items-start gap-5 lg:items-end">
             <p className="max-w-sm text-lg leading-relaxed text-white/55 lg:text-right">
-              One studio for everything digital — led by web development and
+              One agency for everything digital — led by web development and
               extended across 3D, brand, motion and growth.
             </p>
             <MagneticButton to="/contact">

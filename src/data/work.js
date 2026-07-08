@@ -1,15 +1,9 @@
 /**
- * Real Forwardly portfolio — backed by the studio's actual assets in /public.
- * `type` drives how each item renders (looping video vs. still image).
+ * Forwardly portfolio — real CGI / 3D work backed by assets in /public.
+ * `type` drives rendering: looping video vs. still image.
  */
 
-export const workCategories = [
-  "All",
-  "3D Animation",
-  "Still Renders",
-  "AR / VR",
-  "Web Development",
-];
+export const workCategories = ["All", "3D Animation", "Still Renders", "AR / VR"];
 
 export const workItems = [
   // ---- 3D product animations (turntables / 360°) ----
@@ -32,11 +26,11 @@ export const workItems = [
     tags: ["Turntable", "Fashion", "CGI"],
   },
   {
-    id: "headphone",
+    id: "headphone-vid",
     type: "video",
     src: "/Headphone.mp4",
     title: "Wireless Headphones",
-    subtitle: "Product Reveal",
+    subtitle: "Product Reveal Animation",
     category: "3D Animation",
     tags: ["Animation", "Tech", "CGI"],
   },
@@ -50,51 +44,92 @@ export const workItems = [
     tags: ["Turntable", "Lifestyle", "CGI"],
   },
 
-  // ---- Still product renders (CGI product photography) ----
+  // ---- Interactive 360° viewers (multi-angle render sets) ----
   {
-    id: "movado",
+    id: "joy360",
+    type: "sequence",
+    src: "/work/joy/1.jpg",
+    frames: ["/work/joy/1.jpg", "/work/joy/3.jpg", "/work/joy/4.jpg", "/work/joy/5.jpg", "/work/joy/6.jpg", "/work/joy/7.jpg"],
+    title: "Thrustmaster Airbus Joystick",
+    subtitle: "Interactive 360° View",
+    category: "3D Animation",
+    tags: ["360°", "Hardware", "CGI"],
+  },
+  {
+    id: "cam360",
+    type: "sequence",
+    src: "/work/cam/1.jpg",
+    frames: ["/work/cam/1.jpg", "/work/cam/2.jpg", "/work/cam/3.jpg", "/work/cam/4.jpg", "/work/cam/5.jpg"],
+    title: "Samsung Bridge Camera",
+    subtitle: "Interactive 360° View",
+    category: "3D Animation",
+    tags: ["360°", "Tech", "CGI"],
+  },
+  {
+    id: "jbl360",
+    type: "sequence",
+    src: "/work/jbl/1.jpg",
+    frames: ["/work/jbl/1.jpg", "/work/jbl/2.jpg", "/work/jbl/3.jpg", "/work/jbl/4.jpg", "/work/jbl/5.jpg", "/work/jbl/6.jpg"],
+    title: "JBL Live Headphones",
+    subtitle: "Interactive 360° View",
+    category: "3D Animation",
+    tags: ["360°", "Audio", "CGI"],
+  },
+
+  // ---- Still product renders (photoreal CGI) ----
+  {
+    id: "mk-bag",
     type: "image",
-    src: "/still-renders/Watch_Movado_1.png",
-    title: "Movado Bold",
-    subtitle: "Gold Chronograph — Studio Render",
+    src: "/work/bag.jpg",
+    title: "Michael Kors Backpack",
+    subtitle: "Lifestyle Product Render",
+    category: "Still Renders",
+    tags: ["Fashion", "Lifestyle", "Render"],
+  },
+  {
+    id: "salomon",
+    type: "image",
+    src: "/work/shoes1.jpg",
+    title: "Salomon Alpha Cross",
+    subtitle: "Footwear Studio Render",
+    category: "Still Renders",
+    tags: ["Footwear", "Sport", "Render"],
+  },
+  {
+    id: "ankle-boot",
+    type: "image",
+    src: "/work/shoes2.jpg",
+    title: "Suede Ankle Boot",
+    subtitle: "Footwear Studio Render",
+    category: "Still Renders",
+    tags: ["Footwear", "Fashion", "Render"],
+  },
+  {
+    id: "crossbody",
+    type: "image",
+    src: "/work/bag2.jpg",
+    title: "Leather Crossbody Bag",
+    subtitle: "Studio Render",
+    category: "Still Renders",
+    tags: ["Fashion", "Leather", "Render"],
+  },
+  {
+    id: "bulova",
+    type: "image",
+    src: "/work/watch.jpg",
+    title: "Bulova Chronograph",
+    subtitle: "Studio Render",
     category: "Still Renders",
     tags: ["Watch", "Luxury", "Render"],
   },
   {
-    id: "seiko",
+    id: "xdrive",
     type: "image",
-    src: "/still-renders/Watch_Seiko_1.png",
-    title: "Seiko Two-Tone",
-    subtitle: "Dress Watch — Studio Render",
+    src: "/work/xdrive.jpg",
+    title: "xDrive Gaming Chair",
+    subtitle: "Studio Render",
     category: "Still Renders",
-    tags: ["Watch", "Render", "Product"],
-  },
-  {
-    id: "movado2",
-    type: "image",
-    src: "/still-renders/Watch_Bulova_1.png",
-    title: "Bulova",
-    subtitle: "Precisionist — Studio Render",
-    category: "Still Renders",
-    tags: ["Watch", "Render", "Product"],
-  },
-  {
-    id: "citizen",
-    type: "image",
-    src: "/still-renders/Watch_Citizen_1.png",
-    title: "Citizen",
-    subtitle: "Eco-Drive — Studio Render",
-    category: "Still Renders",
-    tags: ["Watch", "Render", "Product"],
-  },
-  {
-    id: "joss",
-    type: "image",
-    src: "/still-renders/Black_Front_1.5.jpg",
-    title: "JOSS 40oz Tumbler",
-    subtitle: "Packshot — Studio Render",
-    category: "Still Renders",
-    tags: ["Drinkware", "Packshot", "Render"],
+    tags: ["Furniture", "Gaming", "Render"],
   },
 
   // ---- AR / VR ----
@@ -106,15 +141,5 @@ export const workItems = [
     subtitle: "Immersive AR / VR Environment",
     category: "AR / VR",
     tags: ["AR/VR", "Environment", "Realtime"],
-  },
-
-  // ---- Web development (placeholder until projects are added) ----
-  {
-    id: "web-soon",
-    type: "soon",
-    title: "Web Projects",
-    subtitle: "Case studies landing soon",
-    category: "Web Development",
-    tags: ["React", "Next.js", "WebGL"],
   },
 ];
