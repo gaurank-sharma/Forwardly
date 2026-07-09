@@ -85,14 +85,14 @@ export default function ExecutionSystem() {
           dark
           align="center"
           eyebrow="The execution system"
-          title={<>Vision in. <span className="text-gradient">Results out.</span></>}
+          title={<>From vision to <span className="text-gradient">results.</span></>}
           intro="Forwardly runs on a repeatable execution system — the same operating model elite product teams use to ship fast without breaking quality."
         />
 
         {/* pipeline */}
         <div className="exec-track relative mt-20">
-          {/* connecting line */}
-          <div className="absolute left-0 right-0 top-7 hidden h-px bg-white/10 lg:block">
+          {/* connecting line — aligned to the icon centres, sits behind the cards */}
+          <div className="absolute left-8 right-8 top-[3.5rem] -z-0 hidden h-px bg-white/10 lg:block">
             <div className="exec-line h-full w-full bg-gradient-brand" />
           </div>
 

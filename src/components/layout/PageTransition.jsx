@@ -4,16 +4,19 @@ import { gsap } from "../../lib/gsap";
 import { LogoMark } from "../ui/Logo";
 
 /**
- * PageTransition — a gradient curtain that wipes up to reveal each new route,
- * with the Forwardly mark flashing through. Runs on every pathname change
- * (and the initial load, as an intro).
+ * PageTransition — a gradient curtain with the Forwardly mark that plays once
+ * as an intro on the very first load. It intentionally does NOT replay on
+ * client-side route changes, so SPA navigation stays instant.
  */
 export default function PageTransition() {
   const { pathname } = useLocation();
   const panel = useRef(null);
   const mark = useRef(null);
+  const played = useRef(false);
 
   useLayoutEffect(() => {
+    if (played.current) return; // first load only — never on navigation
+    played.current = true;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const tl = gsap.timeline();
     // cover instantly (before paint) so there's no flash of the new page

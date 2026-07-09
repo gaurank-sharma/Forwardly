@@ -11,7 +11,7 @@ export default function About() {
         eyebrow="Who we are"
         crumb="About"
         title={<>An agency that ships like a <span className="text-gradient">product team.</span></>}
-        intro="Forwardly fuses the craft of a premium creative agency with the leverage of a SaaS platform. Gurgaon-based, detail-obsessed, and built for momentum."
+        intro="Forwardly pairs the craft of a premium creative agency with a repeatable, systems-driven way of building. Gurgaon-based, detail-obsessed, and built for momentum."
       />
       <AgencyVsSaaS />
       <WhyForwardly />

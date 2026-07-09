@@ -16,14 +16,14 @@ const agency = {
 };
 
 const saas = {
-  label: "The Platform",
-  tagline: "Scalable systems",
+  label: "The System",
+  tagline: "Repeatable process",
   icon: Layers,
   points: [
     "Reusable design systems & components",
-    "Dashboards, analytics & automation",
-    "Self-serve tools that scale with you",
-    "Continuous iteration, always-on",
+    "A battle-tested build & QA process",
+    "Clear handover, so you can update with ease",
+    "Continuous iteration after launch",
   ],
 };
 
@@ -88,8 +88,8 @@ export default function AgencyVsSaaS() {
         <SectionHeading
           align="center"
           eyebrow="Two engines, one agency"
-          title={<>Agency craft. <span className="text-gradient">Platform scale.</span></>}
-          intro="Most studios make you choose. Forwardly fuses the bespoke care of a premium agency with the leverage of a SaaS platform — so you get craft and scale at once."
+          title={<>Agency craft. <span className="text-gradient">Engineered process.</span></>}
+          intro="Most agencies make you choose between care and consistency. Forwardly pairs hands-on senior craft with a repeatable, systems-driven way of building — so you get bespoke work delivered fast, without cut corners."
         />
 
         <Reveal className="mt-16 grid items-stretch gap-6 lg:grid-cols-[1fr_auto_1fr]" stagger={0.15}>

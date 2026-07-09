@@ -30,18 +30,18 @@ const cards = [
 ];
 
 const pills = [
-  { t: "Creative Agency", cls: "bg-white text-[#0a0a0b]", rot: -9, mt: "mt-4" },
-  { t: "3D-first", cls: "bg-[#c2f54b] text-[#0a0a0b]", rot: 8, mt: "mt-14" },
-  { t: "Detail-obsessed", cls: "bg-[#f97316] text-white", rot: -6, mt: "mt-0" },
-  { t: "Photoreal CGI", cls: "bg-white text-[#0a0a0b]", rot: 11, mt: "mt-12" },
-  { t: "Results-driven", cls: "bg-[#1a1a1c] text-white border border-white/10", rot: -8, mt: "mt-2" },
-  { t: "Premium Quality", cls: "bg-[#c2f54b] text-[#0a0a0b]", rot: 7, mt: "mt-16" },
-  { t: "Cinema-grade", cls: "bg-[#6c5cef] text-white", rot: -11, mt: "mt-1" },
-  { t: "Pixel-perfect", cls: "bg-white text-[#0a0a0b]", rot: 6, mt: "mt-10" },
-  { t: "Fast Turnaround", cls: "bg-[#c2f54b] text-[#0a0a0b]", rot: -7, mt: "mt-3" },
-  { t: "Conversion-focused", cls: "bg-[#1a1a1c] text-white border border-white/10", rot: 10, mt: "mt-14" },
-  { t: "Innovation-led", cls: "bg-[#f97316] text-white", rot: -5, mt: "mt-6" },
-  { t: "Trusted Partner", cls: "bg-[#6c5cef] text-white", rot: 9, mt: "mt-1" },
+  { t: "Creative Agency", cls: "bg-white text-[#0a0a0b]", rot: -9, mt: "sm:mt-4" },
+  { t: "3D-first", cls: "bg-[#c2f54b] text-[#0a0a0b]", rot: 8, mt: "sm:mt-14" },
+  { t: "Detail-obsessed", cls: "bg-[#f97316] text-white", rot: -6, mt: "sm:mt-0" },
+  { t: "Photoreal CGI", cls: "bg-white text-[#0a0a0b]", rot: 11, mt: "sm:mt-12" },
+  { t: "Results-driven", cls: "bg-[#1a1a1c] text-white border border-white/10", rot: -8, mt: "sm:mt-2" },
+  { t: "Premium Quality", cls: "bg-[#c2f54b] text-[#0a0a0b]", rot: 7, mt: "sm:mt-16" },
+  { t: "Cinema-grade", cls: "bg-[#6c5cef] text-white", rot: -11, mt: "sm:mt-1" },
+  { t: "Pixel-perfect", cls: "bg-white text-[#0a0a0b]", rot: 6, mt: "sm:mt-10" },
+  { t: "Fast Turnaround", cls: "bg-[#c2f54b] text-[#0a0a0b]", rot: -7, mt: "sm:mt-3" },
+  { t: "Conversion-focused", cls: "bg-[#1a1a1c] text-white border border-white/10", rot: 10, mt: "sm:mt-14" },
+  { t: "Innovation-led", cls: "bg-[#f97316] text-white", rot: -5, mt: "sm:mt-6" },
+  { t: "Trusted Partner", cls: "bg-[#6c5cef] text-white", rot: 9, mt: "sm:mt-1" },
 ];
 
 export default function Stats() {
@@ -98,7 +98,7 @@ export default function Stats() {
             <div
               key={c.unit}
               data-reveal
-              className={`flex h-72 flex-col justify-between rounded-3xl p-8 ${c.cls}`}
+              className={`flex h-auto min-h-[13rem] flex-col justify-between gap-8 rounded-3xl p-8 sm:h-72 sm:gap-0 ${c.cls}`}
             >
               <div className="flex items-start">
                 <span className="font-display text-7xl font-extrabold leading-none">
@@ -114,13 +114,13 @@ export default function Stats() {
         {/* falling pills */}
         <div
           ref={pillWrap}
-          className="relative mt-24 flex flex-wrap items-center justify-center gap-x-3 gap-y-1"
+          className="relative mt-12 flex flex-wrap items-center justify-center gap-x-2 gap-y-2 sm:mt-24 sm:gap-x-3 sm:gap-y-1"
         >
           {pills.map((p) => (
             <span
               key={p.t}
               data-rot={p.rot}
-              className={`pill ${p.mt} inline-block rounded-full px-7 py-3.5 text-lg font-bold shadow-[0_18px_40px_-16px_rgba(0,0,0,0.7)] will-change-transform ${p.cls}`}
+              className={`pill mt-0 ${p.mt} inline-block rounded-full px-4 py-2 text-sm font-bold shadow-[0_18px_40px_-16px_rgba(0,0,0,0.7)] will-change-transform sm:px-7 sm:py-3.5 sm:text-lg ${p.cls}`}
             >
               {p.t}
             </span>

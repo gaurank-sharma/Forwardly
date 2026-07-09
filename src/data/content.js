@@ -1,63 +1,3 @@
-/* Case studies featured in the interactive 3D showcase. */
-export const caseStudies = [
-  {
-    id: "nova",
-    name: "Nova Commerce",
-    category: "Web Development · 3D Viz",
-    result: "+212% conversion",
-    blurb:
-      "Rebuilt a fashion marketplace with a WebGL product configurator and edge rendering — checkout time cut in half.",
-    metrics: [
-      { k: "Conversion", v: "+212%" },
-      { k: "LCP", v: "0.9s" },
-      { k: "Revenue", v: "+$4.1M" },
-    ],
-    accent: "#c2f54b",
-  },
-  {
-    id: "atlas",
-    name: "Atlas Fintech",
-    category: "Branding · Web App",
-    result: "Series B raised",
-    blurb:
-      "A complete identity system and dashboard that helped a fintech close a $40M round with a billion-dollar feel.",
-    metrics: [
-      { k: "Raised", v: "$40M" },
-      { k: "NPS", v: "72" },
-      { k: "Activation", v: "+89%" },
-    ],
-    accent: "#a6e635",
-  },
-  {
-    id: "lumen",
-    name: "Lumen Studio",
-    category: "Motion · Marketing",
-    result: "18M+ views",
-    blurb:
-      "A cinematic launch film and full-funnel campaign that turned a product drop into a cultural moment.",
-    metrics: [
-      { k: "Views", v: "18M+" },
-      { k: "CTR", v: "6.4%" },
-      { k: "ROAS", v: "5.2x" },
-    ],
-    accent: "#7c3aed",
-  },
-  {
-    id: "orbit",
-    name: "Orbit SaaS",
-    category: "3D · Product",
-    result: "+140% trials",
-    blurb:
-      "An interactive 3D landing experience for a developer platform that made onboarding feel like a game.",
-    metrics: [
-      { k: "Trials", v: "+140%" },
-      { k: "Time on site", v: "4m 20s" },
-      { k: "Signups", v: "+96%" },
-    ],
-    accent: "#c2f54b",
-  },
-];
-
 /* Testimonials — real partners we've delivered for. */
 export const testimonials = [
   {
@@ -97,20 +37,20 @@ export const stats = [
 /* "Why Forwardly" pillars. */
 export const pillars = [
   {
-    title: "Engineered for speed",
-    desc: "Sub-second load times and 60fps interactions, by default. Performance is a feature, not an afterthought.",
+    title: "Web development first",
+    desc: "Fast-loading, responsive websites built to a real standard — clean code, mobile-perfect, and made to turn visitors into enquiries.",
   },
   {
-    title: "Design that converts",
-    desc: "Award-level aesthetics tied to real business metrics. Beauty with a job to do.",
+    title: "Design that means business",
+    desc: "Premium design tied to a clear goal: more trust, more leads, more sales. Beautiful, but always with a job to do.",
   },
   {
-    title: "One global team",
-    desc: "Senior talent across time zones — work continues while you sleep, shipped with enterprise rigor.",
+    title: "Senior hands on every build",
+    desc: "You work directly with the people doing the work — no layers, no handoffs. Clear communication and honest timelines.",
   },
   {
-    title: "Agency + platform",
-    desc: "Hands-on craft of an agency, scalability of a SaaS. The best of both, under one roof.",
+    title: "One partner, end to end",
+    desc: "Web, 3D & CGI, brand and content under one roof — so everything stays consistent and you deal with a single team.",
   },
 ];
 
